@@ -3,27 +3,25 @@
   <head>
     <meta charset=utf-8>
     <title>JamesCostian.com</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel=stylesheet type=text/css>
     <style>
 body, html {
-  font-family: 'Source Sans Pro';
-  font-size: 15px;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
-.container {
-  width: 100%;
-  height: 100%;
+body {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .help-text {
-  width: 600px;
+  font-family: 'Source Sans Pro';
+  justify-content: center;
+  font-size: 2vw;
+  padding: 30px;
   margin: 0 auto;
-  height: 84px; /* pixel perfect calculation */
 }
 .help-text .quote-section,
 .help-text .author {
@@ -31,9 +29,25 @@ body, html {
   line-height: 1.275;
 }
 .help-text .quote {
-  font-size: 37px;
+  font-size: 5vw;
   vertical-align: middle;
   font-weight: bold;
+}
+@media (max-width: 800px) and (min-width: 571px) {
+  .help-text {
+    font-size: 3vw;
+  }
+  .help-text .quote {
+    font-size: 9vw;
+  }
+}
+@media (max-width: 570px) {
+  .help-text {
+    font-size: 4vw;
+  }
+  .help-text .quote {
+    font-size: 10vw;
+  }
 }
 .help-text .not-quote {
   vertical-align: middle;
@@ -44,14 +58,12 @@ body, html {
     </style>
   </head>
   <body>
-    <div class=container>
-      <div class=help-text>
-        <p class=quote-section>
-          <span class=not-quote>[clicking on]</span>
-          <span class=quote>One cat just leads to another</span>
-        </p>
-        <p class=author>&mdash; <em>Hemingway</em></p>
-      </div>
+    <div class=help-text>
+      <p class=quote-section>
+        <span class=not-quote>[clicking on]</span>
+        <span class=quote>One cat just leads <wbr>to another</span>
+      </p>
+      <p class=author>&mdash; <em>Hemingway</em></p>
     </div>
   </body>
 </html>
