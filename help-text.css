@@ -1,0 +1,57 @@
+/* body and html take up all of the space */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/* body is a flex container so that .help-text is centered */
+body {
+  display: flex;
+  align-items: center;
+}
+/* Setup font defaults for .help-text, add some padding to the sides, and make sure .help-text is horizontally centered */
+.help-text {
+  font-family: 'Source Sans Pro';
+  justify-content: center;
+  font-size: 2vw;
+  padding: 30px;
+  margin: 0 auto;
+}
+/* Define space between lines of text */
+.help-text .quote-section,
+.help-text .author {
+  margin: 7px 0;
+  line-height: 1.275;
+}
+/* Make the actual quote from Hemingway large, bold, and in the middle of the prefix for the quote (.not-quote) */
+.help-text .quote {
+  font-size: 5vw;
+  vertical-align: middle;
+  font-weight: bold;
+}
+/* Dynamically resize the text */
+@media (max-width: 800px) and (min-width: 571px) {
+  .help-text {
+    font-size: 3vw;
+  }
+  .help-text .quote {
+    font-size: 9vw;
+  }
+}
+@media (max-width: 570px) {
+  .help-text {
+    font-size: 4vw;
+  }
+  .help-text .quote {
+    font-size: 10vw;
+  }
+}
+/* Make sure the prefix for the quote is vertically centered */
+.help-text .not-quote {
+  vertical-align: middle;
+}
+/* Put the attribution on the far right of the quote */
+.help-text .author {
+  text-align: right;
+}
