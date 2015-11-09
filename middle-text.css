@@ -30,16 +30,8 @@ body {
   vertical-align: middle;
   font-weight: bold;
 }
-/* Dynamically resize the text */
-@media (max-width: 800px) and (min-width: 571px) {
-  .middle-text {
-    font-size: 3vw;
-  }
-  .middle-text .big {
-    font-size: 9vw;
-  }
-}
-@media (max-width: 570px) {
+/* Resize the text if the viewport is too small */
+@media (max-width: 700px) {
   .middle-text {
     font-size: 4vw;
   }
