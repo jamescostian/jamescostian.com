@@ -148,8 +148,15 @@
   }
 
   window.addEventListener('load', function () {
+    // If this website was seen recently, then there must be 1+ cookie(s)
+    var recentlySeen = !!document.cookie
+    // Now that we've checked for cookies, we can set a cookie to remember that this site has been seen recently
+    var expirationDate = new Date()
+    expirationDate.setDate(expirationDate.getDate() + 1) // This cookie expires in 1 day
+    document.cookie = 'recently=seen; expires=' + expirationDate.toUTCString() + '; path=/'
+    // Setup the first cat
     setTimeout(function () {
       setupNewCat(catDB[0])
-    }, 3000)
+    }, recentlySeen ? 1750 : 3000)
   })
 }(window, document))
