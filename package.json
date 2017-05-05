@@ -1,0 +1,29 @@
+{
+  "name": "jamescostian.com",
+  "description": "Source code for jamescostian.com",
+  "version": "1.0.0",
+  "author": "James Costian <james@jamescostian.com>",
+  "bugs": {
+    "url": "https://github.com/jamescostian/jamescostian.com/issues"
+  },
+  "dependencies": {
+    "babili-webpack-plugin": "0.0.11",
+    "cat-game": "jamescostian/cat-game#2eb45ce9df3862b79566479514f4a166b8e082e7",
+    "webpack": "2"
+  },
+  "devDependencies": {
+    "snazzy": "7",
+    "standard": "10"
+  },
+  "homepage": "https://jamescostian.com/",
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamescostian/jamescostian.com.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "standard | snazzy"
+  }
+}
