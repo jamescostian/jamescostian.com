@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset=utf-8>
+    <meta charset="utf-8">
     <title>JamesCostian.com</title>
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel=stylesheet type=text/css>
-    <link href=bundle.css rel=stylesheet type=text/css>
-    <script src=bundle.js></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
+    <link href="bundle.css" rel="stylesheet" type="text/css">
+    <script src="bundle.js"></script>
   </head>
   <body>
+    <header>
+      <h6>Hi! My name is</h6>
+      <h1>James Costian</h1>
+    </header>
+    <section>
+      <!-- This should be the left sidebar (slides in first) on desktop, but it should be a small mess of links on mobile -->
+      <aside>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="resume.pdf">Resume</a></li>
+          <li><a href="https://www.linkedin.com/in/jamescostian">LinkedIn</a></li>
+          <li><a href="https://github.com/jamescostian">GitHub</a></li>
+          <li><a href="https://www.npmjs.com/~jamescostian">npmjs</a></li>
+          <li><a href="https://www.instagram.com/jamescostian/">Instagram</a></li>
+          <li><a href="https://www.snapchat.com/add/jamescostian">Snapchat</a></li>
+          <li><a href="https://github.com/jamescostian/jamescostian.com">Source code for this website</a></li>
+        </ul>
+      </aside>
+
+      <!-- Right sidebar (slides in second) on desktop, but just another vertical section on mobile. On tablets, you might set up a grid of projects, but otherwise, go for one column and many rows -->
+      <aside>
+        <h3>Some Open Source Projects</h3>
+        <ul>
+          <li><!-- Put a smaller version of cat-game/cats/0.jpg as background -->
+            <a href="cat-game">
+              <h5>Cat Game</h5><!-- Display this on a solid background, put above the cat picture -->
+              <p>Click cat pictures as long as you can!</p><!-- Only show this text on hover -->
+            </a>
+          </li>
+          <!-- More projects can be added here later -->
+        </ul>
+      </aside>
+
+      <!-- Center (slides up after both sidebars are in) on desktop, but just another part of the page on mobile -->
+      <section>
+        Blog posts have not been loaded.
+        <noscript>Enable JavaScript to read them, or check the source code for this website</noscript>
+        <!--
+          After JS has downloaded the manifest of blog posts, something like this would be shown:
+          <h3>BLOG POSTS</h3>  <-- this should have a line above and below it, and it should be centered
+          <article>
+            <h4>Title of post</h4>
+            <p>First paragraph of content</p>
+            <p>Another paragraph if it's also in the manifest, all the way until... <a href="post/name" class="read-more">Read more</a></p>
+          </article>
+        -->
+      </section>
+    </section>
   </body>
 </html>
