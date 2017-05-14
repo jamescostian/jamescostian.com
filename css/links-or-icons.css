@@ -1,11 +1,30 @@
-.links-or-icons a:visited {
-  color: blue;
-}
 .links-or-icons {
   padding: 0;
   margin: 0 auto;
   list-style-type: none;
 }
+.links-or-icons .link-icon {
+  display: inline-block;
+}
+.links-or-icons .no-icon {
+  display: none;
+}
+.links-or-icons .link-icon+.link-icon {
+  padding-left: 1vw;
+}
+.links-or-icons a {
+  display: inline-block;
+  font-size: 0;
+  text-decoration: none;
+}
+.links-or-icons i {
+  display: inline-block;
+  font-size: 6vw;
+  padding: 2vw;
+  margin: 0;
+  border-radius: 0 0 2vw 2vw;
+}
+
 .links-or-icons .github i {
   color: #fff;
   background: #24292e;
@@ -17,36 +36,15 @@
 .links-or-icons .instagram i {
   color: #fff;
   background: #7232bd;
-  /*
-    color: #458eff;
-    background: #ded1c1;
-    color: white;
-    background: #00568F;
-  */
 }
 .links-or-icons .snapchat i {
   color: #000;
   background: #fffc00;
 }
-
-.links-or-icons li {
-  display: inline-block;
-}
-.links-or-icons li+li {
-  padding-left: 1vw;
-}
-.links-or-icons a {
-  display: inline-block;
-  font-size: 0;
-  text-decoration: none;
-}
-.links-or-icons .no-icon {
-  display: none;
-}
 .links-or-icons .resume {
   vertical-align: top;
 }
-.links-or-icons .resume a i {
+.links-or-icons .resume i {
   font-size: 6vw;
   padding: 2vw;
   margin: 0;
@@ -55,14 +53,24 @@
   font-style: normal;
   line-height: 1;
 }
-.links-or-icons a i {
-  display: inline-block;
-  font-size: 6vw;
-  padding: 2vw;
-  margin: 0;
-  border-radius: 0 0 2vw 2vw;
-}
+
+/* The vw units are very nice, but there's gotta be a limit to them */
 @media (min-width: 6in) {
+  .links-or-icons .link-icon+.link-icon {
+    padding-left: .06in;
+  }
+  .links-or-icons i {
+    font-size: .36in;
+    padding: .12in;
+    border-radius: 0 0 .12in .12in;
+  }
+  .links-or-icons .resume i {
+    font-size: .36in;
+    padding: .12in;
+  }
+}
+
+@media (min-width: 10in) {
   .links-or-icons {
     margin: 0;
   }
@@ -76,7 +84,7 @@
   .links-or-icons a i {
     display: none;
   }
-  .links-or-icons li, .links-or-icons .no-icon {
+  .links-or-icons .link-icon, .links-or-icons .no-icon {
     display: list-item;
   }
 }
