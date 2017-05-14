@@ -1,14 +1,18 @@
 .name-top {
   text-align: center;
+  background: var(--dark-color);
+  color: var(--pop-color);
+  margin: 0;
+  padding: 5vh 0;
 }
 .name-top .name {
   font-size: 13vw;
-  line-height: 112%;
+  line-height: 1;
   padding: 0;
   margin: 0;
 }
 .name-top .extra {
-  line-height: 100%;
+  line-height: 1;
   padding: 0;
   margin: 0;
   font-size: 4vw;

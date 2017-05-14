@@ -45,7 +45,8 @@
   font-size: 6vw;
   padding: 2vw;
   margin: 0;
-  background: red;
+  background: var(--lighter-color);
+  color: var(--pop-color);
   font-style: normal;
   line-height: 1;
 }
