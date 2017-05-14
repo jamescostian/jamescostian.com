@@ -2,6 +2,8 @@
   color: blue;
 }
 .links-or-icons {
+  padding: 0;
+  margin: 0 auto;
   list-style-type: none;
 }
 .links-or-icons .github i {
@@ -30,6 +32,9 @@
 .links-or-icons li {
   display: inline-block;
 }
+.links-or-icons li+li {
+  padding-left: 2vw;
+}
 .links-or-icons a {
   display: inline-block;
   font-size: 0;
@@ -55,8 +60,12 @@
   font-size: 6vw;
   padding: 2vw;
   margin: 0;
+  border-radius: 0 0 2vw 2vw;
 }
 @media (min-width: 6in) {
+  .links-or-icons {
+    margin: 0;
+  }
   .links-or-icons a {
     font-size: 1em;
     /*
