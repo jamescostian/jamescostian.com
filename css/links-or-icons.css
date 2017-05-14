@@ -33,7 +33,7 @@
   display: inline-block;
 }
 .links-or-icons li+li {
-  padding-left: 2vw;
+  padding-left: 1vw;
 }
 .links-or-icons a {
   display: inline-block;
