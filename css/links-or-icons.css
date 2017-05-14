@@ -1,0 +1,72 @@
+.links-or-icons a:visited {
+  color: blue;
+}
+.links-or-icons {
+  list-style-type: none;
+}
+.links-or-icons .github i {
+  color: #fff;
+  background: #24292e;
+}
+.links-or-icons .linkedin i {
+  color: #fff;
+  background: #0976b4;
+}
+.links-or-icons .instagram i {
+  color: #fff;
+  background: #7232bd;
+  /*
+    color: #458eff;
+    background: #ded1c1;
+    color: white;
+    background: #00568F;
+  */
+}
+.links-or-icons .snapchat i {
+  color: #000;
+  background: #fffc00;
+}
+
+.links-or-icons li {
+  display: inline-block;
+}
+.links-or-icons a {
+  display: inline-block;
+  font-size: 0;
+  text-decoration: none;
+}
+.links-or-icons .no-icon {
+  display: none;
+}
+.links-or-icons .resume {
+  vertical-align: top;
+}
+.links-or-icons .resume a i {
+  font-size: 6vw;
+  padding: 2vw;
+  margin: 0;
+  background: red;
+  font-style: normal;
+  line-height: 1;
+}
+.links-or-icons a i {
+  display: inline-block;
+  font-size: 6vw;
+  padding: 2vw;
+  margin: 0;
+}
+@media (min-width: 6in) {
+  .links-or-icons a {
+    font-size: 1em;
+    /*
+      Perhaps re-enable underlining?
+      text-decoration: none;
+    */
+  }
+  .links-or-icons a i {
+    display: none;
+  }
+  .links-or-icons li, .links-or-icons .no-icon {
+    display: list-item;
+  }
+}
