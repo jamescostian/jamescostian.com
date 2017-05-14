@@ -1,0 +1,24 @@
+.name-top {
+  text-align: center;
+}
+.name-top .name {
+  font-size: 13vw;
+  line-height: 112%;
+  padding: 0;
+  margin: 0;
+}
+.name-top .extra {
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 4vw;
+}
+
+@media (min-width: 8.5in) {
+  .name-top .extra {
+    font-size: 2em;
+  }
+  .name-top .name {
+    font-size: 7em;
+  }
+}
