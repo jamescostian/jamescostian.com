@@ -33,36 +33,62 @@
 .intro nav {
   margin-left: auto;
   margin-right: 5vmin;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   width: 50vmin;
 }
-.intro nav .icon {
-  grid-area: span 1;
+.intro nav .icons a {
+  display: inline-block;
 }
-.intro nav .icon img {
+.intro nav .icons a + a {
+  margin-left: 2vmin;
+}
+.intro nav .icons img {
   height: 10vmin;
 }
-.intro nav a {
+.intro nav .links a {
   text-align: right;
   font-size: 10vmin;
   line-height: 1;
   padding: 0;
   margin: 0;
+  display: block;
 }
 
 @media (min-width: 5in) and (min-height: 5in) {
   .intro nav {
     width: 2.5in;
   }
-  .intro nav .icon img {
+  .intro nav .icons img {
     height: .5in;
   }
-  .intro nav a {
+  .intro nav .links a {
     font-size: .5in;
   }
+  .intro nav .icons a + a {
+    margin-left: .0025in;
+  }
 }
+
+@media (min-height: 4in) {
+  .intro nav {
+    width: auto;
+    margin: 0 auto;
+  }
+  .intro nav .links a {
+    font-size: 5vw;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .intro nav .links a + a:before {
+    content: ' \00a0 \2014 \00a0 ';
+    color: gray;
+  }
+}
+@media (min-height: 4in) and (min-width: 4in) {
+  .intro nav .links a {
+    font-size: .4in;
+  }
+}
+
 
 @media (min-width: 5in) and (max-width: 8.4999in) {
   .name-top .extra {
