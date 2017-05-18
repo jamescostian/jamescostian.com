@@ -1,0 +1,80 @@
+.intro {
+  background-image: url('../../img/me.jpg');
+  background-position: left bottom;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.name-top {
+  text-align: center;
+  color: var(--pop-color);
+  margin: 0;
+  padding: 5vh 0;
+}
+.name-top .name {
+  font-size: 13vw;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+.name-top .extra {
+  font-weight: normal;
+  font-size: 6vw;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.intro nav {
+  margin-left: auto;
+  margin-right: 5vmin;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 50vmin;
+}
+.intro nav .icon {
+  grid-area: span 1;
+}
+.intro nav .icon img {
+  height: 10vmin;
+}
+.intro nav a {
+  text-align: right;
+  font-size: 10vmin;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 5in) and (min-height: 5in) {
+  .intro nav {
+    width: 2.5in;
+  }
+  .intro nav .icon img {
+    height: .5in;
+  }
+  .intro nav a {
+    font-size: .5in;
+  }
+}
+
+@media (min-width: 5in) and (max-width: 8.4999in) {
+  .name-top .extra {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 8.5in) {
+  .name-top .extra {
+    font-size: .34in;
+  }
+  .name-top .name {
+    font-size: 1.1in;
+  }
+}

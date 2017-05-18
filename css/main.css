@@ -1,11 +1,10 @@
-body {
+@import 'colors.css';
+
+html, body {
   font-family: 'Source Sans Pro';
   background: var(--light-color);
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
-@import 'colors.css';
-@import 'name-top.css';
-@import 'links-or-icons.css';
+@import 'intro/main.css';

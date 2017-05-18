@@ -3,59 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>JamesCostian.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
-    <link href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?libdco" rel="stylesheet" type="text/css"><!-- Social icons used on mobile version of site come from http://www.socicon.com -->
     <link href="bundle.css" rel="stylesheet" type="text/css">
     <script src="bundle.js"></script>
   </head>
   <body>
-    <header class="name-top">
-      <h6 class="extra">Hi! My name is</h6>
-      <h1 class="name">James Costian</h1>
-    </header>
-    <section class=container>
-      <!-- This should be the left sidebar (slides in first) on desktop, but it should be a small mess of links on mobile -->
-      <aside class="left-sidebar">
-        <ul class="links-or-icons">
-          <li class="github link-icon"><a href="https://github.com/jamescostian">GitHub<i class="socicon-github"></i></a></li>
-          <li class="no-icon link-icon"><a href="https://www.npmjs.com/~jamescostian">npmjs</a></li>
-          <li class="linkedin link-icon"><a href="https://www.linkedin.com/in/jamescostian">LinkedIn<i class="socicon-linkedin"></i></a></li>
-          <li class="resume link-icon"><a href="resume.pdf">R&eacute;sum&eacute;<i>R&eacute;sum&eacute;</i></a></li>
-          <li class="snapchat link-icon"><a href="https://www.snapchat.com/add/jamescostian">Snapchat<i class="socicon-snapchat"></i></a></li>
-          <li class="instagram link-icon"><a href="https://www.instagram.com/jamescostian/">Instagram<i class="socicon-instagram"></i></a></li>
-          <li class="no-icon link-icon"><a href="https://github.com/jamescostian/jamescostian.com">Source code for this website</a></li>
-        </ul>
-      </aside>
-
-      <!-- Right sidebar (slides in second) on desktop, but just another vertical section on mobile. On tablets, you might set up a grid of projects, but otherwise, go for one column and many rows -->
-      <aside>
-        <h3>Some Open Source Projects</h3>
-        <ul>
-          <li><!-- Put a smaller version of cat-game/cats/0.jpg as background -->
-            <a href="cat-game">
-              <h5>Cat Game</h5><!-- Display this on a solid background, put above the cat picture -->
-              <p>Click cat pictures as long as you can!</p><!-- Only show this text on hover -->
-            </a>
-          </li>
-          <!-- More projects can be added here later -->
-        </ul>
-      </aside>
-
-      <!-- Center (slides up after both sidebars are in) on desktop, but just another part of the page on mobile -->
-      <section>
-        Blog posts have not been loaded.
-        <noscript>Enable JavaScript to read them, or check the source code for this website</noscript>
-        <!--
-          After JS has downloaded the manifest of blog posts, something like this would be shown:
-          <h3>BLOG POSTS</h3>  <-- this should have a line above and below it, and it should be centered
-          <article>
-            <h4>Title of post</h4>
-            <p>First paragraph of content</p>
-            <p>Another paragraph if it's also in the manifest, all the way until... <a href="post/name" class="read-more">Read more</a></p>
-          </article>
-        -->
-      </section>
+    <section class="intro">
+      <header class="name-top">
+        <h6 class="extra">Hi! My name is</h6>
+        <h1 class="name">James Costian</h1>
+        <h6 class="extra">I'm a Web Developer in Dallas</h6>
+      </header>
+      <!-- todo: convert to ol/li and deal with removing the styles browsers add for those elements -->
+      <nav>
+        <a href="https://github.com/jamescostian" class="icon"><img src="img/github.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/jamescostian" class="icon"><img src="img/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.snapchat.com/add/jamescostian" class="icon"><img src="img/snapchat.png" alt="Snapchat"></a>
+        <a href="https://www.instagram.com/jamescostian/" class="icon"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="resume.pdf" style="grid-column: 1 / 5; grid-row: 2 / 3">R&eacute;sum&eacute;</a>
+        <a href="#blog" style="grid-column: 1 / 5; grid-row: 3 / 4">Blog</a>
+        <a href="cat-game" style="grid-column: 1 / 5; grid-row: 4 / 5">Cat Game</a>
+      </nav>
+    </section>
+    <section class="blog" id="blog">
+      Blog posts have not been loaded.
+      <noscript>Enable JavaScript to read them, or check the source code for this website</noscript>
+      <!--
+        After JS has downloaded the manifest of blog posts, something like this would be shown:
+        <h3>BLOG POSTS</h3>  <-- this should have a line above and below it, and it should be centered
+        <article>
+          <h4>Title of post</h4>
+          <p>First paragraph of content</p>
+          <p>Another paragraph if it's also in the manifest, all the way until... <a href="post/name" class="read-more">Read more</a></p>
+        </article>
+      -->
     </section>
   </body>
 </html>
