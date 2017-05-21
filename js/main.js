@@ -21,6 +21,7 @@ window.fetch('blog/manifest.json')
       readMore.className = 'read-more'
       readMore.href = '#blog/' + encodeURIComponent(meta.date)
       articleEl.appendChild(readMore)
+      return articleEl
     })
     const blogEl = document.getElementById('blog')
     blogEl.innerHTML = '' // Remove the old content which tells users that the blog hasn't loaded yet
