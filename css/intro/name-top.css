@@ -1,6 +1,5 @@
 .name-top {
   text-align: center;
-  background: var(--dark-color);
   color: var(--pop-color);
   margin: 0;
   padding: 5vh 0;
@@ -12,17 +11,24 @@
   margin: 0;
 }
 .name-top .extra {
+  font-weight: normal;
+  font-size: 6vw;
   line-height: 1;
   padding: 0;
   margin: 0;
-  font-size: 4vw;
+}
+
+@media (min-width: 5in) and (max-width: 8.4999in) {
+  .name-top .extra {
+    font-size: 4vw;
+  }
 }
 
 @media (min-width: 8.5in) {
   .name-top .extra {
-    font-size: 2em;
+    font-size: .34in;
   }
   .name-top .name {
-    font-size: 7em;
+    font-size: 1.1in;
   }
 }
