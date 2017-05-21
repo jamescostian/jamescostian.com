@@ -20,9 +20,14 @@
 .intro nav .icons img {
   height: 10vmin;
 }
+.intro nav .links a:visited {
+  color: blue;
+}
 .intro nav .links a {
+  color: blue;
+  text-decoration: none;
   text-align: right;
-  font-size: 10vmin;
+  font-size: 7vmin;
   line-height: 1;
   padding: 0;
   margin: 0;
@@ -49,6 +54,9 @@
     width: auto;
     margin: 0 auto;
   }
+  .intro nav .links {
+    padding-top: 2vh;
+  }
   .intro nav .links a {
     font-size: 5vw;
     display: inline-block;
@@ -61,6 +69,6 @@
 }
 @media (min-height: 4in) and (min-width: 4in) {
   .intro nav .links a {
-    font-size: .2in;
+    font-size: .25in;
   }
 }
