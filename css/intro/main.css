@@ -1,4 +1,5 @@
 .intro {
+  background: var(--intro-background);
   height: 100vh;
   width: 100vw;
   padding: 0;

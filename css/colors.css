@@ -1,6 +1,7 @@
 :root {
-  --light-color: #D1C6BA;
-  --lighter-color: #E8DFD6;
-  --pop-color: #D1604C;
-  --dark-color: #614B47;
+  --intro-background: #E0EAEA;
+  --blog-background: #4A6584;
+
+  --my-name-color: #1A90FF; /* More in line with the background: 3090C0 */
+  --pop-color: #D4A496;
 }

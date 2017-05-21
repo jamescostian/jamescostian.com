@@ -5,6 +5,7 @@
   padding: 5vh 0;
 }
 .name-top .name {
+  color: var(--my-name-color);
   font-size: 13vw;
   line-height: 1;
   padding: .5vw 0 1.5vw; /* This looks centered, and IDK why */

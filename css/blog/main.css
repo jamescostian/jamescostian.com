@@ -1,0 +1,15 @@
+.blog {
+  background: var(--blog-background);
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.blog h3 {
+  margin: 0;
+  text-align: center;
+  padding: 5vh;
+  font-size: 10vw;
+  color: var(--pop-color);
+}

@@ -2,9 +2,9 @@
 
 html, body {
   font-family: 'Source Sans Pro';
-  background: var(--light-color);
   margin: 0;
   padding: 0;
 }
 
 @import 'intro/main.css';
+@import 'blog/main.css';
