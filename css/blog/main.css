@@ -4,6 +4,7 @@
   width: 100vw;
   padding: 0;
   margin: 0;
+  color: var(--blog-text);
 }
 
 .blog h3 {
@@ -12,4 +13,32 @@
   padding: 5vh;
   font-size: 10vw;
   color: var(--pop-color);
+}
+
+.blog .post-preview {
+  width: 70vw;
+  max-width: 10in;
+  margin: 0 auto;
+}
+
+.blog .post-preview .title {
+  font-size: 6vw;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 6in) and (max-width: 8.4999in) {
+  .blog .post-preview .title {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 8.5in) {
+  .blog h3 {
+    font-size: .85in;
+  }
+  .blog .post-preview .title {
+    font-size: .34in;
+  }
 }
