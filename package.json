@@ -9,9 +9,11 @@
   "dependencies": {
     "cat-game": "jamescostian/cat-game#v1.0.0",
     "cssnano": "3",
+    "glob": "7",
     "postcss-cli": "4",
     "postcss-custom-media": "6",
-    "postcss-import": "10"
+    "postcss-import": "10",
+    "showdown": "1"
   },
   "homepage": "https://jamescostian.com/",
   "license": "ISC",
@@ -21,6 +23,7 @@
     "url": "git+https://github.com/jamescostian/jamescostian.com.git"
   },
   "scripts": {
-    "build": "postcss --use postcss-import postcss-custom-media cssnano --map --output bundle.css css/main.css"
+    "build": "postcss --use postcss-import postcss-custom-media cssnano --map --output bundle.css css/main.css",
+    "postbuild": "node blog/htmlify.js"
   }
 }
