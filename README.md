@@ -1,6 +1,6 @@
 # JamesCostian.com
 
-Source code for [jamescostian.com](http://jamescostian.com/).
+Source code for [jamescostian.com](https://jamescostian.com/).
 
 ## Building
 
