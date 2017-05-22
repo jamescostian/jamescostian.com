@@ -23,7 +23,7 @@
     "url": "git+https://github.com/jamescostian/jamescostian.com.git"
   },
   "scripts": {
-    "build": "postcss --use postcss-import postcss-custom-media cssnano --map --output bundle.css css/main.css",
+    "build": "postcss --map --output bundle.css css/main.css",
     "postbuild": "node blog/htmlify.js"
   }
 }
