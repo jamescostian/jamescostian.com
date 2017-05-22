@@ -7,7 +7,7 @@ const converter = new showdown.Converter()
 converter.setFlavor('github')
 
 const htmlBeginning = `<!DOCTYPE html>
-<html>
+<html class="blog">
   <head>
     <meta charset="utf-8">
     <title>James Costian's Blog</title>

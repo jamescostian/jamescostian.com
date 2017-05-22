@@ -2,11 +2,6 @@
 
 Consectetur adipiscing elit. Quisque gravida placerat posuere. Fusce quis rhoncus tellus. Morbi purus mi, egestas congue pharetra et, maximus nec felis. Cras ac gravida felis. Mauris interdum libero id velit porttitor, eget aliquam justo pharetra. Integer convallis orci non est ullamcorper sagittis. Suspendisse quis metus scelerisque, ultrices ligula sit amet, fermentum nibh. Vivamus metus nibh, volutpat ac posuere eget, vestibulum ac magna. Maecenas justo enim, vulputate vel mauris a, auctor laoreet nunc. Aenean eget sem vitae sapien rhoncus ornare. Nulla ullamcorper condimentum urna, vel sollicitudin risus ultricies ut. Ut vestibulum purus et eros consequat aliquet. Etiam sollicitudin nulla at neque iaculis, a volutpat massa aliquet. Cras placerat luctus magna sit amet posuere. Duis rhoncus hendrerit odio vestibulum tincidunt. Aenean convallis aliquam neque, eget commodo tellus elementum vitae.
 
-```js
-var x = 5;
-function asd() {}
-```
-
 Proin tempor magna non purus lobortis dignissim. Mauris lorem ligula, tempor quis finibus at, dictum a ligula. Curabitur suscipit justo felis, eget elementum nulla pretium vitae. Mauris venenatis vulputate lectus. Praesent rhoncus tristique justo, ut mattis augue mollis quis. Aliquam eget efficitur nulla. Donec sit amet maximus massa. Mauris vitae lorem ante. Sed at congue odio. Cras venenatis porta mauris, vel condimentum enim interdum et. Vestibulum cursus lacus ac sem scelerisque, id auctor nibh iaculis.
 
 Duis eu porttitor risus, non cursus felis. Duis scelerisque erat quis nunc dictum imperdiet. In dui ex, consequat eu leo id, convallis rhoncus justo. Cras ex metus, efficitur sit amet nisl non, vulputate venenatis leo. Fusce aliquam pulvinar felis, non aliquet ante feugiat a. Nunc venenatis, tortor quis hendrerit pulvinar, nisl nisl ullamcorper massa, egestas luctus mauris dui eu erat. Nam interdum lacus eu nisi aliquam dignissim eget vitae justo. Ut viverra lacus at faucibus consectetur. Pellentesque quis porta mauris. Fusce sodales accumsan nibh, at commodo libero accumsan eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent at gravida justo. Donec viverra suscipit turpis ut aliquet.
