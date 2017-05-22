@@ -8,10 +8,11 @@
 }
 
 .blog h3 {
+  --base-font-size: 10;
   margin: 0;
   text-align: center;
   padding: 5vh;
-  font-size: 10vw;
+  font-size: calc(var(--base-font-size) * 1vw);
   color: var(--pop-color);
 }
 
@@ -22,23 +23,24 @@
 }
 
 .blog .post-preview .title {
-  font-size: 6vw;
+  --base-font-size: 6;
+  font-size: calc(var(--base-font-size) * 1vw);
   line-height: 1;
   margin: 0;
   padding: 0;
 }
 
-@media (min-width: 6in) and (max-width: 8.4999in) {
+@media (min-width: 6in) {
   .blog .post-preview .title {
-    font-size: 4vw;
+    --base-font-size: 4;
   }
 }
 
 @media (min-width: 8.5in) {
   .blog h3 {
-    font-size: .85in;
+    font-size: calc(var(--base-font-size) / 100 * 8.5in);
   }
   .blog .post-preview .title {
-    font-size: .34in;
+    font-size: calc(var(--base-font-size) / 100 * 8.5in);
   }
 }

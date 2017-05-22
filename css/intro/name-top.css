@@ -6,30 +6,32 @@
 }
 .name-top .name {
   color: var(--my-name-color);
-  font-size: 13vw;
+  --base-font-size: 13;
+  font-size: calc(var(--base-font-size) * 1vw);
   line-height: 1;
   padding: .5vw 0 1.5vw; /* This looks centered, and IDK why */
   margin: 0;
 }
 .name-top .extra {
   font-weight: normal;
-  font-size: 6vw;
+  --base-font-size: 6;
+  font-size: calc(var(--base-font-size) * 1vw);
   line-height: 1;
   padding: 0;
   margin: 0;
 }
 
-@media (min-width: 5in) and (max-width: 8.4999in) {
+@media (min-width: 5in) {
   .name-top .extra {
-    font-size: 4vw;
+    --base-font-size: 4;
   }
 }
 
 @media (min-width: 8.5in) {
   .name-top .extra {
-    font-size: .34in;
+    font-size: calc(var(--base-font-size) * 8.5in / 100);
   }
   .name-top .name {
-    font-size: 1.1in;
+    font-size: calc(var(--base-font-size) / 100 * 8.5in);
   }
 }
