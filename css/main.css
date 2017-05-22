@@ -3,14 +3,10 @@
 @import 'blog/main.css';
 
 html, body {
-  background: var(--intro-background);
+  background: var(--blog-background);
   font-family: 'Source Sans Pro';
   margin: 0;
   padding: 0;
-}
-
-html.blog, html.blog body {
-  background: var(--blog-background);
 }
 
 a, a:visited {
