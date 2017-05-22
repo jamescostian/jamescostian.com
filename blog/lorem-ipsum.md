@@ -21,3 +21,33 @@ Integer risus dui, finibus non mollis ut, aliquam at ipsum. Vivamus ut diam fauc
 ###### Wow, that was a lot of Lorem
 
 Ipsum. A bit too much IMHO TBQH. But it works for checking styles.
+
+```
+module.exports = (config, app) => {
+  let server
+  if (config.ssl) {
+    server = require('https').createServer(config.ssl, app)
+  } else {
+    server = require('http').createServer(app)
+  }
+  server.listen(config.port, () => console.log('Webserver is up!'))
+  return server
+}
+```
+
+A wise man once said
+
+> Lorem ipsum
+
+Hmmm... that quote doesn't look super good, but I'm also probably not going to use blockquotes. What about lists?
+
++ Milk
++ Eggs
++ Cheese
++ Bread
+
+Meh, I can deal with it.
+
+1. I like
+3. to not have to
+2. count
