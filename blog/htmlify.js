@@ -14,6 +14,7 @@ const htmlBeginning = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
     <link href="../bundle.css" rel="stylesheet" type="text/css">
+    <link href="../highlight/styles/atom-one-dark.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <section class="blog" id="blog">
@@ -22,6 +23,8 @@ const htmlBeginning = `<!DOCTYPE html>
 const htmlEnd = `
       </article>
     </section>
+    <script src="../highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad()</script>
   </body>
 </html>`
 
