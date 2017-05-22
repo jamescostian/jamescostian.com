@@ -1,4 +1,4 @@
-.blog h3 {
+.blog .heading {
   --base-font-size: 10;
   margin: 0;
   text-align: center;
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 8.5in) {
-  .blog h3 {
+  .blog .heading {
     font-size: calc(var(--base-font-size) / 100 * 8.5in);
   }
   .blog .post-preview .title {
