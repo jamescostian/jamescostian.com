@@ -7,15 +7,11 @@
     "url": "https://github.com/jamescostian/jamescostian.com/issues"
   },
   "dependencies": {
-    "babili-webpack-plugin": "0.0.11",
     "cat-game": "jamescostian/cat-game#v1.0.0",
-    "css-loader": "0.28",
-    "extract-text-webpack-plugin": "2",
-    "webpack": "2"
-  },
-  "devDependencies": {
-    "snazzy": "7",
-    "standard": "10"
+    "cssnano": "3",
+    "postcss-cli": "4",
+    "postcss-custom-media": "6",
+    "postcss-import": "10"
   },
   "homepage": "https://jamescostian.com/",
   "license": "ISC",
@@ -25,7 +21,6 @@
     "url": "git+https://github.com/jamescostian/jamescostian.com.git"
   },
   "scripts": {
-    "build": "webpack",
-    "test": "standard | snazzy"
+    "build": "postcss --use postcss-import postcss-custom-media cssnano --map --output bundle.css css/main.css"
   }
 }

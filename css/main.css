@@ -1,4 +1,6 @@
 @import 'colors.css';
+@import 'intro/main.css';
+@import 'blog.css';
 
 html, body {
   background: var(--intro-background);
@@ -6,6 +8,3 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
-@import 'intro/main.css';
-@import 'blog/main.css';
