@@ -12,3 +12,7 @@ html, body {
 html.blog, html.blog body {
   background: var(--blog-background);
 }
+
+a, a:visited {
+  color: var(--blue);
+}
