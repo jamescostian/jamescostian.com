@@ -4,6 +4,19 @@
   margin: 2.5em auto;
 }
 
+.post blockquote {
+  border-left: .3em solid #D0C9C9;
+  padding: .01em 0 .01em 1em;
+  margin-left: 1.45em;
+}
+
+.post ul, .post ol {
+  padding-left: 2.5em;
+}
+.post li {
+  padding-left: .25em;
+}
+
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   margin: 0;
   line-height: 1.2;
