@@ -3,6 +3,7 @@ module.exports = (ctx) => ({
   plugins: {
     'postcss-import': {},
     'postcss-custom-media': {},
+    'postcss-css-variables': {},
     cssnano: {
       mergeRules: false
     }

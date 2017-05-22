@@ -12,6 +12,7 @@
     "glob": "7",
     "postcss-cli": "4",
     "postcss-custom-media": "6",
+    "postcss-css-variables": "0.7",
     "postcss-import": "10",
     "showdown": "1"
   },
