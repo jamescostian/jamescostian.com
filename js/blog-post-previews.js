@@ -32,7 +32,7 @@ export function makeArticleEl (meta) {
   const paragraphs = meta.preview.split('\n')
   for (let text of paragraphs) {
     const pEl = document.createElement('p')
-    pEl.innerHTML = text
+    pEl.innerHTML = text + ' ' // This space is undetectable for pretty much every paragraph, except the last one, where it separates words from "Read more"
     articleEl.appendChild(pEl)
   }
 
@@ -41,7 +41,8 @@ export function makeArticleEl (meta) {
   readMore.innerHTML = 'Read more'
   readMore.className = 'read-more'
   readMore.href = '#blog/' + encodeURIComponent(meta.date)
-  articleEl.appendChild(readMore)
+  // The link should be at the end of the last paragraph
+  articleEl.children[articleEl.children.length - 1].appendChild(readMore)
 
   return articleEl
 }
