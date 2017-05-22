@@ -1,6 +1,6 @@
 @import 'colors.css';
 @import 'intro/main.css';
-@import 'blog.css';
+@import 'blog/main.css';
 
 html, body {
   background: var(--blog-background);
