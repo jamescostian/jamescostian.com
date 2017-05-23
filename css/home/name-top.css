@@ -4,6 +4,9 @@
   color: var(--pop-color);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .name-top .name {
   color: var(--blue);
