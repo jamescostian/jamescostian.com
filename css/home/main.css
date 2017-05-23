@@ -11,4 +11,16 @@
   margin: 0;
   display: flex;
   flex-flow: column nowrap;
+  text-align: center; /* This centers the <img class="portrait"> */
+}
+
+@media (--three-piece-viewport) {
+  .intro .portrait {
+    height: 34vh;
+    width: 34vh;
+    margin: 0 auto;
+    border-radius: 15vmin;
+    background: url('img/me.jpg');
+    background-size: contain;
+  }
 }
