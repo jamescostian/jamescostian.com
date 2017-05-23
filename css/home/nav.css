@@ -1,7 +1,7 @@
 .intro-nav {
-  margin-left: auto;
-  margin-right: 5vmin;
+  margin: 0 auto;
   width: 50vmin;
+  height: 50vh;
   text-align: center;
 }
 .intro-nav .icons {
@@ -28,6 +28,12 @@
   padding: 0;
   margin: 0;
   display: block;
+}
+
+@media (--three-piece-viewport) {
+  .intro-nav {
+    height: 33vh;
+  }
 }
 
 @media (min-width: 5in) and (min-height: 5in) {

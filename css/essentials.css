@@ -1,4 +1,5 @@
 @import 'colors.css';
+@custom-media --three-piece-viewport (min-height: 6in);
 
 html, body {
   background: var(--blog-background);
