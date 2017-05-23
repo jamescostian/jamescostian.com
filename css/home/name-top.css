@@ -1,5 +1,5 @@
 .name-top {
-  height: 50vh;
+  height: 50%;
   text-align: center;
   color: var(--pop-color);
   margin: 0;
@@ -27,7 +27,7 @@
 
 @media (--three-piece-viewport) {
   .name-top {
-    height: 33vh;
+    height: 33%;
   }
 }
 
@@ -43,5 +43,14 @@
   }
   .name-top .name {
     font-size: calc(var(--base-font-size) * .5vw);
+  }
+}
+
+@media (--extra-wide-viewport) {
+  .name-top .extra {
+    font-size: calc(var(--base-font-size) * 8.5in / 100);
+  }
+  .name-top .name {
+    font-size: calc(var(--base-font-size) * 8.5in / 100);
   }
 }

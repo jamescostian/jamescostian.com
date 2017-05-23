@@ -6,20 +6,22 @@
 .intro {
   background: var(--intro-background);
   height: 100vh;
+  max-height: 10in;
   width: 100vw;
   padding: 0;
   margin: 0;
   text-align: center; /* This centers the <img class="portrait"> */
 }
+.intro .portrait {
+  display: none;
+}
 
 @media (--three-piece-viewport) {
   .intro .portrait {
-    height: 34vh;
-    width: 34vh;
+    display: block;
+    height: 34%;
     margin: 0 auto;
     border-radius: 5vmin;
-    background: url('img/me.jpg');
-    background-size: contain;
   }
 }
 
@@ -27,11 +29,18 @@
   body {
     display: flex;
     overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
   }
   .intro {
     width: 50vw;
+    max-width: 8.5in;
   }
   .blog {
     width: 50vw;
+    max-width: 8.5in;
+    min-height: 0;
+    height: 100vh;
+    max-height: 10in;
   }
 }

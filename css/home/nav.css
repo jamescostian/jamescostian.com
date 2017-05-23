@@ -1,6 +1,6 @@
 .intro-nav {
   margin: 0 auto;
-  height: 50vh;
+  height: 50%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@
 
 @media (--three-piece-viewport) {
   .intro-nav {
-    height: 33vh;
+    height: 33%;
   }
 }
 
