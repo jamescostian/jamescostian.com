@@ -1,8 +1,12 @@
 .intro-nav {
   margin: 0 auto;
-  width: 50vmin;
   height: 50vh;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.intro-nav > div {
+  align-self: center;
 }
 .intro-nav .icons {
   text-align: center;
@@ -12,7 +16,8 @@
 }
 /* This prevents a margin from being applied to the first child, which is LinkedIn, which has a TM sign */
 .intro-nav .icons a + a {
-  margin-right: 1.5vmin;
+  margin-left: .25in;
+  margin-right: 10.72px;
 }
 .intro-nav .icons a:last-child {
   margin-right: 0;
@@ -21,13 +26,14 @@
   height: 10vmin;
 }
 .intro-nav .links a {
+  --base-font-size: 7;
+  font-size: calc(var(--base-font-size) * 1vw);
   text-decoration: none;
   text-align: right;
-  font-size: 7vmin;
   line-height: 1;
   padding: 0;
   margin: 0;
-  display: block;
+  display: inline-block;
 }
 
 @media (--three-piece-viewport) {
@@ -36,41 +42,24 @@
   }
 }
 
-@media (min-width: 5in) and (min-height: 5in) {
-  .intro-nav {
-    width: 2.5in;
+.intro-nav .links a + a:before {
+  content: ' \00a0 \2014 \00a0 ';
+  color: gray;
+}
+
+.intro-nav .links {
+  padding-top: 3vh;
+}
+@media (min-width: 5in) {
+  .intro-nav .links a {
+    --base-font-size: 5;
   }
   .intro-nav .icons img {
     height: .5in;
   }
-  .intro-nav .links a {
-    font-size: .5in;
-  }
-  .intro-nav .icons a + a {
-    margin-left: .25in;
-  }
 }
-
-@media (min-height: 4in) {
-  .intro-nav {
-    width: auto;
-    margin: 0 auto;
-  }
-  .intro-nav .links {
-    padding-top: 2vh;
-  }
+@media (min-width: 6in) {
   .intro-nav .links a {
-    font-size: 5vw;
-    display: inline-block;
-    text-decoration: none;
-  }
-  .intro-nav .links a + a:before {
-    content: ' \00a0 \2014 \00a0 ';
-    color: gray;
-  }
-}
-@media (min-height: 4in) and (min-width: 4in) {
-  .intro-nav .links a {
-    font-size: .25in;
+    font-size: calc(var(--base-font-size) / 100 * 6in);
   }
 }
