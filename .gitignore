@@ -1,4 +1,7 @@
 *.log
 node_modules
-bundle.*
+bundle-blog.css
+bundle-blog.css.map
+bundle-home.css
+bundle-home.css.map
 blog/*.html

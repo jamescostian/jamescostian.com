@@ -1,12 +1,19 @@
 @import 'colors.css';
-@import 'intro/main.css';
-@import 'blog/main.css';
 
 html, body {
   background: var(--blog-background);
   font-family: 'Source Sans Pro';
   margin: 0;
   padding: 0;
+}
+
+.blog {
+  background: var(--blog-background);
+  min-height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  color: var(--blog-text);
 }
 
 a, a:visited {
