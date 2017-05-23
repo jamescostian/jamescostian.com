@@ -1,5 +1,5 @@
 @import 'colors.css';
-@custom-media --three-piece-viewport (min-height: 6in);
+@custom-media --three-piece-viewport (min-height: 5in);
 @custom-media --two-sided-viewport (min-width: 8.5in);
 
 html, body {
