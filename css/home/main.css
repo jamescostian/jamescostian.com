@@ -13,11 +13,21 @@
 }
 
 @media (--three-piece-viewport) {
+  body {
+    display: flex;
+    overflow-y: scroll;
+  }
+  .intro {
+    width: 50vw;
+  }
+  .blog {
+    width: 50vw;
+  }
   .intro .portrait {
     height: 34vh;
     width: 34vh;
     margin: 0 auto;
-    border-radius: 15vmin;
+    border-radius: 5vmin;
     background: url('img/me.jpg');
     background-size: contain;
   }
