@@ -13,6 +13,17 @@
 }
 
 @media (--three-piece-viewport) {
+  .intro .portrait {
+    height: 34vh;
+    width: 34vh;
+    margin: 0 auto;
+    border-radius: 5vmin;
+    background: url('img/me.jpg');
+    background-size: contain;
+  }
+}
+
+@media (--two-sided-viewport) {
   body {
     display: flex;
     overflow-y: scroll;
@@ -22,13 +33,5 @@
   }
   .blog {
     width: 50vw;
-  }
-  .intro .portrait {
-    height: 34vh;
-    width: 34vh;
-    margin: 0 auto;
-    border-radius: 5vmin;
-    background: url('img/me.jpg');
-    background-size: contain;
   }
 }

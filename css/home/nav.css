@@ -42,6 +42,12 @@
   }
 }
 
+@media (--two-sided-viewport) {
+  .intro-nav .links a {
+    font-size: calc(var(--base-font-size) * .5vw);
+  }
+}
+
 .intro-nav .links a + a:before {
   content: ' \00a0 \2014 \00a0 ';
   color: gray;

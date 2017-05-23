@@ -37,11 +37,11 @@
   }
 }
 
-@media (min-width: 8.5in) {
+@media (--two-sided-viewport) {
   .name-top .extra {
-    font-size: calc(var(--base-font-size) * 8.5in / 100);
+    font-size: calc(var(--base-font-size) * .5vw);
   }
   .name-top .name {
-    font-size: calc(var(--base-font-size) / 100 * 8.5in);
+    font-size: calc(var(--base-font-size) * .5vw);
   }
 }
