@@ -44,3 +44,14 @@
     max-height: 10in;
   }
 }
+
+@media (--extra-wide-viewport) {
+  body {
+    background: #6A90BD;
+  }
+}
+@media (--extra-long-viewport) {
+  body {
+    background: #6A90BD;
+  }
+}
