@@ -37,5 +37,20 @@
         <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="read-more" href="blog/lorem-ipsum">Read more</a></p>
       </article>
     </section>
+    <script>
+// It's so small, why put it in another file?
+const setPaddingAboveBlogHeading = () => {
+  // First, get the heading for the blog section
+  const heading = document.getElementsByClassName('heading')[0]
+  // Next, find how far my name is from the top of the page
+  const totalDistance = document.getElementsByClassName('name')[0].offsetTop
+  // Next, find how much of that distance is actually just coming from the intro being far above (only applies to extra long viewports)
+  const extraDistance = document.getElementsByClassName('intro')[0].offsetTop
+  // Finally, set the padding
+  heading.style.paddingTop = totalDistance - extraDistance + 'px' // Now the heading for the blog section is just as far from the top of the page as the heading for my name
+}
+window.addEventListener('load', setPaddingAboveBlogHeading, false)
+window.addEventListener('resize', setPaddingAboveBlogHeading, false)
+    </script>
   </body>
 </html>

@@ -27,19 +27,13 @@
   }
 }
 
-@media (--three-piece-viewport) {
+@media (--two-sided-viewport) {
   .blog .heading {
-    height: 33%;
-    padding: 0;
+    padding: 0 0 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     --base-font-size: 13;
-  }
-}
-
-@media (--two-sided-viewport) {
-  .blog .heading {
     font-size: calc(var(--base-font-size) * .5vw);
   }
   .blog .post-preview .title {
