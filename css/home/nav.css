@@ -67,10 +67,11 @@
   top: -10px;
   border-top-color: var(--intro-background);
 }
-.link-to-blog span {
+.link-to-blog .text {
   display: inline-block;
   margin-bottom: 10px;
   color: rgb(var(--down-arrow));
+  text-decoration: none;
 }
 
 @media (--two-sided-viewport) {
