@@ -47,11 +47,11 @@
 
 @media (--extra-wide-viewport) {
   body {
-    background: #6A90BD;
+    background: var(--slightly-darker-covfefe);
   }
 }
 @media (--extra-long-viewport) {
   body {
-    background: #6A90BD;
+    background: var(--slightly-darker-covfefe);
   }
 }

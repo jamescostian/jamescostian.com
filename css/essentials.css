@@ -5,7 +5,6 @@
 @custom-media --extra-wide-viewport (min-width: 17in);
 
 html, body {
-  background: var(--blog-background);
   font-family: 'Source Sans Pro';
   margin: 0;
   padding: 0;
