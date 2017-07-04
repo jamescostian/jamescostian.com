@@ -1,9 +1,7 @@
 :root {
-  --covfefe: #c0fef0;
-  --slightly-darker-covfefe: #ace4c9;
-  --intro-background: var(--covfefe);
-  --blog-background: rgba(0, 0, 0, .3);
-  --blog-text: #2d3743;
+  --intro-background: #E0EAEA;
+  --blog-background: #4A6584;
+  --blog-text: #9DA9B7;
 
   --blue: #3090C0;
   --pop-color: #918475;
