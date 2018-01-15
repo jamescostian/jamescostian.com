@@ -24,8 +24,8 @@
     "url": "git+https://github.com/jamescostian/jamescostian.com.git"
   },
   "scripts": {
-    "prebuild": "postcss --map --output bundle-blog.css css/blog/main.css",
-    "build": "postcss --map --output bundle-home.css css/home/main.css",
-    "postbuild": "node blog/htmlify.js"
+    "build-css": "postcss --map --output bundle.css css/home/main.css && postcss --map --output blog/bundle.css css/blog/main.css",
+    "build-html": "node blog/htmlify.js",
+    "build": "npm run build-css && npm run build-html"
   }
 }
