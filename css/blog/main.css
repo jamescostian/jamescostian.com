@@ -1,5 +1,5 @@
 @import '../essentials.css';
-@import '../../highlight/styles/atom-one-dark.css';
+@import '../../blog/highlight/styles/atom-one-dark.css';
 
 .post {
   width: 70vw;

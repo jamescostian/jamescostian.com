@@ -22,7 +22,7 @@ const htmlBeginning = `<!DOCTYPE html>
 const htmlEnd = `
       </article>
     </section>
-    <script src="../highlight/highlight.pack.js"></script>
+    <script src="highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad()</script>
   </body>
 </html>`
