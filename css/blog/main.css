@@ -7,6 +7,10 @@
   margin: 2.5em auto;
 }
 
+.post p > code {
+  font-size: 1.2em
+}
+
 .post blockquote {
   border-left: .3em solid #D0C9C9;
   padding: .01em 0 .01em 1em;
