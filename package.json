@@ -12,8 +12,8 @@
     "glob": "7",
     "postcss-cli": "4",
     "postcss-custom-media": "6",
-    "postcss-css-variables": "0.7",
-    "postcss-import": "10",
+    "postcss-css-variables": "0.8",
+    "postcss-import": "11",
     "showdown": "1"
   },
   "homepage": "https://jamescostian.com/",
