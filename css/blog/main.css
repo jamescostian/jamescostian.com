@@ -1,6 +1,13 @@
 @import '../essentials.css';
 @import '../../blog/highlight/styles/atom-one-dark.css';
 
+.back {
+  display: block;
+  background: var(--intro-background);
+  text-align: center;
+}
+
+
 .post {
   width: 70vw;
   max-width: 10in;

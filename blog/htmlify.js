@@ -16,6 +16,7 @@ const htmlBeginning = `<!DOCTYPE html>
     <link href="bundle.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <a href=".." class="back">Back to home</a>
     <section class="blog" id="blog">
       <article class="post">
 `
