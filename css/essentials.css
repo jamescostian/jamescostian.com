@@ -21,6 +21,10 @@ html, body {
   color: var(--blog-text);
 }
 
+.blog a, .blog a:visited {
+  color: var(--light-blue);
+}
+
 a, a:visited {
   color: var(--blue);
 }
