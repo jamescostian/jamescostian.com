@@ -2,12 +2,16 @@
 
 Source code for [jamescostian.com](https://jamescostian.com/).
 
+## Set up
+
+Assuming you have Node and Yarn, just clone this repo run `yarn` in it
+
 ## Building
 
-Assuming you have [Node](https://nodejs.org/) version 7 or higher, clone this repository and run `npm install` in it. Then run `npm run build` and point your browser to the `index.html`
+`yarn build` will build static assets and put them all in `public`.
 
-Note that the links to blog posts omit `.html` so you'll need to change the URL in your browser to be able to see them, or modify your server to accommodate this (see [this](http://stackoverflow.com/a/7761779) if you're using nginx).
+To update the `gh-pages` branch, use `yarn gh-pages`, which will commit and push only the contents of `public` to the `gh-pages` branch
 
-## License
+## Developing
 
-[ISC](LICENSE)
+`yarn start`
